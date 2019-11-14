@@ -1,0 +1,10 @@
+{
+  "name": "Django Channels Heroku",
+  "description": "Simple Chat App",
+  "repository": "https://github.com/forsterw/Django-Channels-Chat-App",
+  "keywords": ["django", "channels", "websockets", "heroku"],
+  "scripts": {
+    "postdeploy": "python manage.py migrate"
+  },
+  "addons": ["heroku-postgresql", "heroku-redis"]
+}
